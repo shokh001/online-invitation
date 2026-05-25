@@ -470,7 +470,7 @@ export default function WeddingInvitation() {
         {/* ── Top ornament ──────────────────────────────── */}
         <div
           className={`reveal section ${visible ? "show" : ""}`}
-          style={{ textAlign: "center", animationDelay: "0.05s" }}
+          style={{ textAlign: "center", animationDelay: "0.05s", overflow: 'hidden' }}
         >
           <svg width="240" height="44" viewBox="0 0 240 44">
             <line
@@ -602,7 +602,7 @@ export default function WeddingInvitation() {
         {/* ── Gold divider ──────────────────────────────── */}
         <div
           className={`reveal section ${visible ? "show" : ""}`}
-          style={{ animationDelay: "0.5s" }}
+          style={{ animationDelay: "0.5s",  overflow: 'hidden' }}
         >
           <GoldDivider />
         </div>
@@ -741,7 +741,6 @@ export default function WeddingInvitation() {
               display: "flex",
               justifyContent: "center",
               gap: 12,
-              flexWrap: "wrap",
             }}
           >
             <CountBox value={time.d} label="Kun" />
@@ -779,7 +778,7 @@ export default function WeddingInvitation() {
         {/* ── Bottom divider ────────────────────────────── */}
         <div
           className={`reveal section ${visible ? "show" : ""}`}
-          style={{ animationDelay: "1.15s" }}
+          style={{ animationDelay: "1.15s",  overflow: 'hidden' }}
         >
           <GoldDivider />
         </div>
